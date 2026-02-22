@@ -29,6 +29,7 @@
         </div>
         <div class="social_icons">
             <a href="https://github.com/VioletSpace" title="My GitHub profile"> My GitHub profile {{component: github-icon}} </a>
+            <a href="https://bsky.app/profile/violet-space.bsky.social" title="Me on Bluesky"> Me on the Fediverse {{component: bsky-icon}}</a>
             <a href="https://mastodon.social/@pipinspace" title="Me on the Fediverse"> Me on the Fediverse {{component: fedi-icon}}</a>
             <a href="https://www.youtube.com/@violetspace_mhd" title="My YouTube channel"> My YouTube channel {{component: youtube-icon}} </a>
         </div>

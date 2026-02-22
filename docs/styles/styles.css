@@ -85,6 +85,7 @@ a {
 
 a:hover {
     color: var(--accent_colour_light);
+    /*color: color-mix(in oklab, var(--accent_colour) 85%, var(--background_colour));*/
 }
 
 a:visited {
@@ -94,6 +95,7 @@ a:visited {
 
 a:visited:hover {
     color: var(--accent_colour_secondary_light);
+    /*color: color-mix(in oklab, var(--accent_colour_secondary) 85%, var(--background_colour));*/
 }
 
 h1 {
@@ -247,8 +249,8 @@ li a {
 }
 
 .social_icons a svg {
-    width: var(--titlesize);
-    height: var(--titlesize);
+    width: calc(var(--titlesize) * 0.875);
+    height: calc(var(--titlesize) * 0.875);
     fill: var(--text_colour);
 
     margin-right: 8px;
@@ -256,6 +258,10 @@ li a {
     background-position: center;
     background-repeat: no-repeat;
     display: inline-block;
+}
+
+.social_icons a svg:hover {
+    fill: color-mix(in oklab, var(--text_colour) 75%, transparent);
 }
 
 @media (max-width: 800px) {
